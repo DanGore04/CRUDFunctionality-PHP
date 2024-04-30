@@ -1,0 +1,95 @@
+/* design */
+.background{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -800px;
+    z-index: 1;
+    opacity: .7;
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,62,121,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.modal-backdrop {
+    z-index: 1020;
+}
+
+#pageTitle{
+    text-align: center;
+    background-color: grey;
+    padding: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/* pop-up info when updating/creating/deleting/failed to create */
+.container1 h5{
+    text-align: center;
+    color: red;
+}
+
+/* seperates btn and 'personal details' */
+.btncont h2{
+    float: left;
+}
+
+.btncont button{
+    float: right;
+}
+
+/* 3 seperate containers for the tables */
+.container1{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 420px;
+}
+
+.container2{
+    position: absolute;
+    z-index: 1;
+    top: 650px;
+    left: 20px;
+}
+
+.container3{
+    position: absolute;
+    z-index: 1;
+    top: 650px;
+    left: 850px;
+}
+
+/* container for form on updating user */
+.formcont{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 525px;
+    width: 500px;
+}
+
+/* table styling ref = https://www.youtube.com/watch?v=rHC4_sJjNuQ&t=106s&ab_channel=doctorcode */
+table{
+    width: 650px;
+    text-align: center;
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px 12px 12px 12px;
+}
+
+th,td{
+    padding: 10px 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+th{
+    background: grey;
+}
+
+tr:nth-child(even){
+    background-color: gainsboro;
+}
